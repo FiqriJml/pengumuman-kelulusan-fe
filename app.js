@@ -42,10 +42,17 @@ form.addEventListener("submit", async (e) => {
       if (data["Tanggal Lahir (dd-mm-yyyy)"] === formattedDate) {
         // Tampilkan data kelulusan
         resultDiv.innerHTML = `
-                <h3>Hasil Kelulusan</h3>
-                <p><strong>Nama:</strong> ${data["Nama Peserta"]}</p>
-                <p><strong>Status:</strong> ${data["LULUS"]}</p>
-                <p><strong>Rerata Nilai:</strong> ${data["Rerata"]}</p>
+                            <div class="result">
+                            <div class="left-col">
+                                <div class="label"><strong>${data["Nama Peserta"]}</strong></div>
+                                <div class="label"><strong>${data["Konsentrasi Keahlian"]}</strong></div>
+                                <div class="status">${data["LULUS"]}</div>
+                            </div>
+                            <div class="right-col">
+                                <div>Rerata Nilai</div>
+                                <div class="score">${data["Rerata"]}</div>
+                            </div>
+                            </div>
                 `;
       } else {
         resultDiv.innerHTML = `<p>Data tidak ditemukan (tanggal lahir tidak cocok).</p>`;
