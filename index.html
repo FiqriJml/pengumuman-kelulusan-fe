@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pengumuman Kelulusan - SMK NEGERI 2 GERUNG</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="LOGO SMKN_2_GERUNG- ENHANCE 2.png"
+        alt="Logo SMK Negeri 2 Gerung"
+        class="logo"
+      />
+      <h1>SMK NEGERI 2 GERUNG</h1>
+      <div class="subtitle">Pengumuman Kelulusan</div>
+      <div class="tahun-pelajaran">Tahun Pelajaran 2024/2025</div>
+
+      <form id="searchForm">
+        <label for="nisn">NISN:</label>
+        <input
+          type="text"
+          id="nisn"
+          name="nisn"
+          placeholder="Masukkan NISN"
+          required
+        />
+
+        <label for="tglLahir">Tanggal Lahir:</label>
+        <input type="date" id="tglLahir" name="tglLahir" required />
+
+        <button type="submit">Cari</button>
+      </form>
+
+      <div id="loading">Loading...</div>
+
+      <div id="result"></div>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
+    <!-- Firebase config dan app.js -->
+    <script src="firebase-config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,122 @@
+/* Reset dan font */
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+.container {
+  background: white;
+  max-width: 480px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 30px 30px 40px;
+  text-align: center;
+}
+.logo {
+  width: 120px;
+  margin: 0 auto 15px;
+}
+h1 {
+  margin: 0 0 5px;
+  font-size: 1.9rem;
+  color: #003366;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+.tahun-pelajaran {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+form {
+  text-align: left;
+}
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+input[type="text"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #0055cc;
+  outline: none;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0055cc;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #003d99;
+}
+#loading {
+  margin-top: 15px;
+  font-style: italic;
+  color: #0055cc;
+  display: none;
+}
+#result {
+  margin-top: 30px;
+  text-align: left;
+  background: #e6f0ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 8px rgba(0, 85, 204, 0.2);
+  color: #003366;
+}
+#result h3 {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #0055cc;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+#result p {
+  margin: 8px 0;
+  font-size: 1.05rem;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .container {
+    padding: 25px 20px 30px;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+}
