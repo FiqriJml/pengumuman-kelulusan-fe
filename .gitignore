@@ -1,4 +1,5 @@
 node_modules/
 serviceAccountKey.json
+firebase-config.json
 *.log
 .vscode/
