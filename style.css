@@ -116,6 +116,10 @@ button:hover {
   font-size: 0.9rem;
   color: #0a1e4a;
 }
+.label-kk {
+  font-size: 0.7rem;
+  color: #0a1e4a;
+}
 
 .left-col .status {
   font-size: 1.3rem;

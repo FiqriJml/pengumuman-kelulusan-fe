@@ -45,7 +45,7 @@ form.addEventListener("submit", async (e) => {
                             <div class="result">
                             <div class="left-col">
                                 <div class="label"><strong>${data["Nama Peserta"]}</strong></div>
-                                <div class="label"><strong>${data["Konsentrasi Keahlian"]}</strong></div>
+                                <div class="label-kk"><strong>${data["Konsentrasi Keahlian"]}</strong></div>
                                 <div class="status">${data["LULUS"]}</div>
                             </div>
                             <div class="right-col">
